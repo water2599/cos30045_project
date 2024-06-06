@@ -16,8 +16,6 @@ h2 {
 .container {
     display: flex;
     justify-content: center;
-    border-style:solid;
-    padding: 1.5rem;
     margin: 20px;
 }
 
@@ -26,23 +24,10 @@ h2 {
     border-right: dashed;
 }
 
-.treemapchart_visualisation {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
 .chart_explanation {
     padding-left: 1.5rem;
     font-size: small;
     font-family: Verdana, sans-serif;
-}
-
-.treemapchart_explanation {
-    padding-left: 1.5rem;
-    font-size: small;
-    font-family: Verdana, sans-serif;
-    padding-right: 1.5rem;
-    border-right: dashed;
 }
 
 .radio_inputs {
@@ -103,4 +88,57 @@ footer {
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
+}
+
+#infographic_2 {
+    display: flex;
+    width: 100%;
+}
+
+#choropleth_detailed_info {
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#Country {
+    color: darkred;
+    font-size: 20px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-right: 35px;
+    padding-right: 55px;
+}
+
+#detailed_info {
+    margin-top: -40px;
+    padding-top: -40px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #080808;
+    transition: all 0.4s ease 0s;
+}
+
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+
+.link:hover {
+    stroke-opacity: .5;
 }

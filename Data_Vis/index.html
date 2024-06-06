@@ -4,13 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="description" content="OECD MENTAL HEALTH STATISTICS"/>
     <meta name="author" content="Sara Tarannum, Hoang Vu Tran">
-    <title>Suicide Rates Visualization</title>
+    <title>Mental Health Statistics Visualization</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
 </head>
 <body>
     <h1>Mental Health Statistics</h1>
-    <!--the start of bar chart-->
     <div class="container">
         <div class="chart_visualisation">
             <h2>Suicide Rates By Country</h2>
@@ -63,24 +63,28 @@
         </div>
     </div>
 
-    <!--the start of line chart-->
     <div class="container">
-        <div class="linechart_explanation">
-            <p>Here is a line chart that shows the rate of mental illness in OECD countries, measured in deaths per 100k.</p>
+        <div class="chart_visualisation">
+            <h2>Global Depression Rates In 2019</h2>
+            <section id="infographic_2">
+                <div class="child_divs" id="Choropleth"></div>
+            </section>
+            <script src="/scripts/chloropeth.js"></script>
         </div>
-
-        <div class="linechart_visualisation">
-            <h2>Mental illness rate by country</h2>
-            <p class="title">Countries:</p>             
-            <p id="linechart"></p>
-            <p class="explanation"></p>
-            <script src="/scripts/line.js"></script>
+        <div class="chart_explanation">
+            <p>This map demonstrates the depression rates in different parts of the world in 2019.</p>
+            <div class="child_divs" id="choropleth_detailed_info">
+                <h3 id="Country"></h3>
+                <p id="detailed_info"></p>
+            </div>
         </div>
     </div>
 
     <div class="container">
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
         <div id="linechart"></div>
-        <script src="/scripts/line.js"></script>
+        <script src="/scripts/script.js"></script>
     </div>
 
     <footer>
